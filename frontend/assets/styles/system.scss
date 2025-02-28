@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  @apply text-6xl font-bold;
+}
+
+.custom-scroll {
+  scrollbar-color: auto;
+  scrollbar-width: thin;
+}
+
+@media (max-width: 1023px) {
+  tbody td[data-title]:before {
+    font-size: 1.1em;
+    font-weight: bold;
+    float: left;
+    width: 50%;
+    content: attr(data-title);
+    text-align: middle;
+    white-space: pre-line;
+  }
+}
