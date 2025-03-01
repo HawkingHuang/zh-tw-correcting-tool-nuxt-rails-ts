@@ -1,6 +1,11 @@
 <template>
-  <div class="card">
-    <slot></slot>
+  <div>
+    <div class="w-[98%] p-1 mx-auto mt-1">
+      <nav-header />
+    </div>
+    <div class="card">
+      <slot></slot>
+    </div>
   </div>
 </template>
 
